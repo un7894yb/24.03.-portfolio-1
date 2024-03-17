@@ -10,7 +10,11 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script>
         $(function(){
-            $()
+            var a=0;
+            $("#slide_btn").find("li").eq(1).click(function(){
+                a=0;
+                $("slide").stop().animate({"left":"-300px"},1000,'linear')
+            })
         });
     </script>
 </head>
@@ -56,6 +60,7 @@
                     </li>
                 </ul>
             </nav>
+            
             <h1 id="logo">glint X glokolor</h1>
             <div id="sub_menu">
                 <ul>
@@ -96,8 +101,10 @@
                         </svg></li>
                 </ul>
             </div>
-            <div class="close_btn">
-                <button><img src="./img/header/close.png" alt="닫기버튼" /></button>
+            
+        </div>
+        <div class="close_btn">
+                <button class="button"><img src="./img/header/close.png" alt="닫기버튼" /></button>
                 <ul>
                     <li><a href="#">BRAND</a></li>
                     <li><a href="#">SHOP</a></li>
@@ -105,7 +112,7 @@
                     <li><a href="#">COMMUNITY</a></li>
                 </ul>
             </div>
-        </div>
+        
     </header>
     <!-- section1 -->
     <section id="slide_wrapper">
