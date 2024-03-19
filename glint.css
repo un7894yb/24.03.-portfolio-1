@@ -2,7 +2,7 @@
 li{list-style:none;}
 a{text-decoration:none; color:inherit;
 display:block;}
-body{font-size:13PX;}
+body{font-size:13px;}
 /* header */
 
 #event{
@@ -12,41 +12,44 @@ body{font-size:13PX;}
     text-align:center;
     line-height:40px;
     color:#fff;
+    font-size:15px;
     font-weight:700;
     z-index:1;
 }
-
+#event span{
+    font-size:13px;
+    margin-left:13px;
+}
 #event:hover{color:#706f6f;}
 
 
 #header_wrppaer{
     width:100%;
-    height:100px;
+    height:80px;
     display:flex;
-    flex-direction:row;
+    justify-content:space-between;
     background-color:rgba(0,0,0,.1);
     position:fixed;
     z-index:5;
     
 }
 
-#gnb_menu, #logo, #sub_menu{padding-top:50px;}
+#gnb_menu, #sub_menu{padding-top:30px;}
 
 #gnb_menu ul{
     font-size:15px;
     display:flex;
     gap:10px;
     text-align:center;
-    
-}
-#gnb_menu li:hover{
-   
-    text-decoration:underline;
+    display:none;
 }
 
 #gnb_menu ul>li>a{
     line-height:40px;
     padding:0 20px 0 20px;
+}
+#gnb_menu ul>li>a:hover{
+     text-decoration:underline;
 }
 
 .gnb-sub-menu{
@@ -63,14 +66,14 @@ body{font-size:13PX;}
 .gnb-sub-menu li{
     padding:3px;
     font-size:13px;
-    display:none;
-
 }
 
 /* logo */
-#logo{
-    
-    margin:0 auto;
+#logo img{
+    width:320px;
+    padding-top:10px;
+   
+   
 }
 
 
@@ -89,16 +92,17 @@ body{font-size:13PX;}
 
 .close_btn{
     height:100vh;
-    
-    
-    margin-top:0;
+    display:none;
     position:relative;
     z-index:2;
+    background-color:rgba(255, 255, 255, 0.8);
   
     
 }
 .close_btn .button{
-    right:0;
+    border:none;
+   
+    right:28px;
     position:absolute;
 }
 
@@ -115,12 +119,13 @@ body{font-size:13PX;}
 
 /* section1 */
 #slide_wrapper{
-    width:100vw;
+    width:100%;
     height:100vh;
     position:relative;
 }
 
 #slide li img{
+    width:100%;
     height:100vh;
     position:absolute;
 }
@@ -158,14 +163,15 @@ body{font-size:13PX;}
 #sec_2_con1{
     text-align:center;
     margin-bottom:200px;
+    color:#666;
 }
 #sec_2_con1 h2{
     font-size:35px;
-    color:#a5a4a4;
+    
     padding:100px 0 40px 0;
    
 }
-
+#sec_2_con1 span{font-size:1rem;}
 
 
 #sec_2_con2{
@@ -181,21 +187,20 @@ body{font-size:13PX;}
    
 }
 .sec_2_img img{
-    width:900PX;
-    height:600px;
+    width:700PX;
+    height:450px;
     display:block;
-   
-    
 }
 
 .sec_2_account{
-    width:600px;
-    height:400px;
-    padding:0 60px;
+    width:700px;
+    height:450px;
+    padding-left:60px;
     padding-top:calc(40% - 200px);
 }
 
-.sec_2_account:nth-child(2){
+#account_right{
+    
     text-align:right;
 }
 .sec_2_title{
@@ -216,7 +221,9 @@ body{font-size:13PX;}
     text-align:center;
 }
 
+
 /* section3 */
+
 #sec3_title{
     width:100%;
     
@@ -232,22 +239,24 @@ body{font-size:13PX;}
 }
 
 #sec3_wrapper{
-    width:320px;
+    width:1472px;
     height:800px;
     background-color:antiquewhite;
+    overflow:hidden;
+    position:relative;
 }
 #sec3_slide{
-    width:2560px;
+    width:2944px;
     display:flex;
     margin-bottom:20px;
+    position:absolute;
 
-    
 }
 
 
 #sec3_slide li img{
-    width:320px;
-    height:400px;
+    width:368px;
+    height:460px;
     
 }
 
@@ -255,12 +264,28 @@ body{font-size:13PX;}
     font-weight:500;
     font-size:18px;
     color:#333;
+    text-align:center;
     margin-top:20px;
     margin-bottom:50px;
  
 }
 .sec3_s p{
     margin-bottom:8px;
+}
+
+#sec_3_btn ul{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    position:relative;
+    top:230px;
+}
+#sec_3_btn li{
+    width:40px;
+    height:40px;
+    background-color:red;
+    
+ 
 }
 
 /* section4 */
@@ -282,8 +307,10 @@ body{font-size:13PX;}
 
 /* section5 */
 #instagram_address{
+    width:100%;
+    height:100vh;
     padding:80px 0;
-     text-align:center;
+    text-align:center;
 }
 #instagram h2{
     font-size:2rem;
@@ -291,4 +318,46 @@ body{font-size:13PX;}
 }
 #instagram span{
     font-size:15px;
+}
+
+/* footer */
+
+#footer{
+    width:100%;
+    background-color:#E8E4E3;
+    padding:44px 0;
+}
+
+
+#footer_logo img{
+    width:320px;
+    margin-bottom:25px;
+}
+
+#footer ul{
+    width:100%;
+    display:flex;
+    gap:20px;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:30px;
+    margin-left:20px;
+    padding-top:20px;
+    border-top:1px solid#000;
+}
+
+#footer p{
+    margin-left:20px;
+    margin-bottom:56px;
+    line-height:20px;
+
+}
+#footer p>span{
+    margin:5px;
+}
+
+#instagram_link img{
+    width:20px;
+    height:20px;
+    margin-left:20px;
 }
