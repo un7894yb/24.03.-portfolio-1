@@ -21,10 +21,17 @@
 
             $("#open").click(function(){
                $(".close_btn").css("display","block");
-            })
+            });
             $(".button").click(function(){
-                $(".close_btn").css('display','none')
-            })
+                $(".close_btn").css('display','none');
+            });
+
+            $("#search").click(function(){
+                $("#search_sec").css("display","block");
+            });
+            $(".button").click(function(){
+                $("#search_sec").css('display','none');
+            });
 
         })
     </script>
@@ -94,7 +101,7 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4.83178C7 2.16326 9.23858 0 12 0C14.7614 0 17 2.16326 17 4.83178V11H15.5106V4.83178C15.5106 2.95814 13.9389 1.43925 12 1.43925C10.0611 1.43925 8.48936 2.95814 8.48936 4.83178V11H7V4.83178Z" fill="#333333"/>
                         </svg></li>
 
-                    <li><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li id="search"><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1761_90)">
                         <circle cx="9" cy="9" r="8.3" stroke="#333333" stroke-width="1.4"/>
                         <path d="M15 15L23.5 23.5" stroke="#333333" stroke-width="1.4"/>
@@ -124,6 +131,11 @@
                     <li><a href="#">COMMUNITY</a></li>
                 </ul>
             </div>
+        <div id="search_sec">
+            <button class="button"><img src="./img/header/close.png" alt="닫기버튼" /></button>
+            <input type="text" value="Searchs." name=""/>
+
+        </div>
         
     </header>
     <!-- section1 -->
@@ -191,7 +203,7 @@
             <h2>BEST PRODUCT</h2>
             <span>당신의 일상을 반짝임으로 깨우는 글린트의 베스트 제품</span>
         </div>
-        <div id="sec3_wrapper">
+      
             <swiper-container class="mySwiper">
                 <swiper-slide>
                     <a href="#"><img src="./img/sec.3/sec3-1.jpg" alt="톤업 크림">
@@ -256,12 +268,8 @@
                             <span>16,000원</span>
                         </div>
                     </a>
-                </swiper-slide>
-            </ul>
-            <div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </section>
+                </swiper-slide>  
+        </section>
 
     <!-- section4 -->
     <section id="youtub">
