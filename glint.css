@@ -167,21 +167,18 @@ body{font-size:13px; position:relative;}
 }
 
 /* section1 */
-#slide_wrapper{
+
+.mySwiper_main{
     width:100%;
-    height:100vh;
-    position:relative;
+    height:100%;
 }
-
-
-
-#slide li img{
+swiper-slide img{
+    display:block;
     width:100%;
-    height:100vh;
-    position:absolute;
+    height:100%;
+    object-fit:cover;
+    
 }
-
-
 /* section2 */
 
 
@@ -199,26 +196,28 @@ body{font-size:13px; position:relative;}
 
 
 #sec_2_con2{
-     margin-left:40px;
+     margin-left:10px;
    
 }
 #sec_2_con2 ul{
     display:grid;
-    grid-template-columns:repeat(2,900px);
-    grid-template-rows:repeat(2,600px);
-   
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+
+  
 
    
 }
 .sec_2_img img{
     width:900px;
-    height:600px;
+    height:700px;
     display:block;
+    
 }
 
 .sec_2_account{
     width:900px;
-    height:600px;
+    height:700px;
     padding-left:60px;
     padding-top:calc(40% - 200px);
 }
@@ -270,8 +269,8 @@ body{font-size:13px; position:relative;}
 
 
 swiper-container{
-    width:100%;
-    height:100vh;
+    width:100vw;
+    height:78vh;
 }
 swiper-slide img{
     display:block;
@@ -282,7 +281,7 @@ swiper-slide img{
 }
 
 .sec3_s{
-    font-weight:500;
+    font-weight:600;
     font-size:18px;
     color:#333;
     text-align:center;
@@ -291,23 +290,14 @@ swiper-slide img{
  
 }
 .sec3_s p{
-    margin-bottom:8px;
+    margin-bottom:10px;
 }
 
-#sec_3_btn ul{
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    position:relative;
-    top:230px;
+.sec3_s>span{
+    font-size:15px;
+    font-weight:500;
 }
-#sec_3_btn li{
-    width:40px;
-    height:40px;
-    background-color:red;
-    
- 
-}
+
 
 /* section4 */
 
@@ -357,7 +347,7 @@ swiper-slide img{
 #footer{
     width:100%;
     background-color:#E8E4E3;
-    padding:44px 0;
+    padding:44px 20px;
 }
 
 
@@ -392,4 +382,33 @@ swiper-slide img{
     width:20px;
     height:20px;
     margin-left:20px;
+}
+
+@media only screen and (max-width:1023px) {
+   
+    .sec_2_img img{
+        width:100%;
+        height:100%;
+    }
+    
+    .sec_2_account{
+        width:550px;
+        height:400px;
+        margin-top:20px;
+    }
+
+    
+    swiper-container{
+       
+        width:1023px;
+        height:100%;
+       
+    }
+    swiper-slide img{
+        display:block;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        
+    }
 }
