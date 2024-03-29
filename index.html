@@ -42,6 +42,23 @@
                 else {
                     $("#header_wrppaer").css("margin-top", "-"+ (window.scrollY) +"px");
                 }
+
+                if(window.scrollY > 1400) {
+                    $('#sec3_title').css('opacity', 1);
+                    $('#sec3_title').css('top', '0px');
+                }
+                console.log(window.scrollY);
+
+                if(window.scrollY > 2690) {
+                    $('#youtub_title').css('opacity', 1);
+                    $('#youtub_title').css('top', '0px');
+                }
+
+                if(window.scrollY > 3780) {
+                    $('#instagram_address').css('opacity', 1);
+                    $('#instagram_address').css('top' , '0px');
+                }
+                
             })
             
         })
@@ -204,7 +221,7 @@
     <section id="sec_3">
         <div id="sec3_title">
             <h2>BEST PRODUCT</h2>
-            <span>당신의 일상을 반짝임으로 깨우는 글린트의 베스트 제품</span>
+            <span>당신의 일상을 반짝임으로 깨우는 글린트의 베스트 제품들을 만나보세요.</span>
         </div>
       
             <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
@@ -282,7 +299,7 @@
             <span>가장 역동적인 반짝임의 순간을 담아,Ready to Glint</span>
         </div>
         <div class="box_1"></div>
-        <div id="youtub_file"><iframe width="1090px" height="613px" src="https://www.youtube.com/embed/v03K0ez1Wbw?autoplay=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div id="youtub_file"><iframe width="1920px" height="1100px" src="https://www.youtube.com/embed/v03K0ez1Wbw?autoplay=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
     </section>
 
     <!-- section5 -->

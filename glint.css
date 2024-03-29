@@ -2,10 +2,12 @@
 li{list-style:none;}
 a{text-decoration:none; color:inherit;
 display:block;}
-body{font-size:13px; position:relative;}
+body{font-size:13px; position:relative;
+overflow-x:hidden;}
 .box{
     height:80px;
     border-left:1px solid#000;
+    margin:30px 0 20px;
 }
 /* header */
 
@@ -117,16 +119,25 @@ body{font-size:13px; position:relative;}
 }
 
 .close_btn ul{
+    height:100vh;
     display:flex;
     flex-direction:column;
     align-items:center;
+    justify-content:center;
+    font-size:5rem;
+    color:#a9a9a9;
+    
     
 }
 .close_btn li{
-   font-size:70px;
-   margin-top:80px;
+    display:inline-block;
+    margin:25px 0;
+    padding:25px 0;
+    
 }
-
+.close_btn li:hover{
+    color:#000;
+}
 #search_sec{
     top:0;
    background-color:rgba(255, 255, 255, 0.8);
@@ -170,7 +181,8 @@ body{font-size:13px; position:relative;}
 
 .mySwiper_main{
     width:100%;
-    height:100%;
+    height:45vw;
+    overflow: hidden;
 }
 swiper-slide img{
     display:block;
@@ -178,6 +190,19 @@ swiper-slide img{
     height:100%;
     object-fit:cover;
     
+}
+
+.mySwiper_main .swiper-slide-active img {
+    animation: test 2s;
+}
+
+@keyframes test {
+    0% {
+        width: 110%;
+    }
+    100% {
+        width: 100%;
+    }
 }
 /* section2 */
 
@@ -188,15 +213,15 @@ swiper-slide img{
     color:#666;
 }
 #sec_2_con1 h2{
-    font-size:35px;
+    font-size:50px;
     padding:100px 0 40px 0;
    
 }
-#sec_2_con1 span{font-size:1rem;}
+#sec_2_con1 span{font-size:30px;}
 
 
 #sec_2_con2{
-     margin-left:10px;
+     margin:0 auto;
    
 }
 #sec_2_con2 ul{
@@ -209,8 +234,8 @@ swiper-slide img{
    
 }
 .sec_2_img img{
-    width:900px;
-    height:700px;
+    width:100%;
+    height:100%;
     display:block;
     
 }
@@ -230,22 +255,25 @@ swiper-slide img{
     
 }
 .sec_2_title{
-    font-size:30px;
+    font-size:40px;
     margin-bottom:24px;
 }
 
 .sec_2_sub{
-    font-size:15px;
+    font-size:20px;
     left:0;
+    letter-spacing:2px;
+    line-height:30px;
+    color:#666
 }
 
 
 .read_btn{
     width:180px;
     
-    border-radius:42%;
+    border-radius:36px;
     border:1px solid#000;
-    padding:11px;
+    padding:11px 46px;
     text-align:center;
 }
 
@@ -253,25 +281,32 @@ swiper-slide img{
 /* section3 */
 
 #sec3_title{
+    position: relative;
+    top: -20px;
+    opacity: 0;
     width:100%;
     text-align:center;
     margin-bottom:100px;
-    
+    transition: opacity 2s, top 2s;
 }
 #sec3_title h2{
     color:#373636;
-    font-size:35px;
+    font-size:50px;
     padding:100px 0 20px 0;
    
 }
 
-
+#sec3_title span{font-size:20px;}
 
 
 swiper-container{
     width:100vw;
-    height:78vh;
+    height:80vh;
+    
 }
+
+
+
 swiper-slide img{
     display:block;
     width:100%;
@@ -282,19 +317,22 @@ swiper-slide img{
 
 .sec3_s{
     font-weight:600;
-    font-size:18px;
+   
     color:#333;
     text-align:center;
     margin-top:20px;
    
  
 }
+
+
 .sec3_s p{
     margin-bottom:10px;
+    font-size:25px;
 }
 
 .sec3_s>span{
-    font-size:15px;
+    font-size:20px;
     font-weight:500;
 }
 
@@ -306,14 +344,21 @@ swiper-slide img{
     text-align:center;
     padding:80px 0;
     margin-bottom:30px;
+    top:-20px;
+    position:relative;
+    opacity:0;
+    transition: opacity 2s, top 2s;
 }
+
+
 #youtub_title h2{
-    margin-bottom:24px;
+    margin-bottom:30px;
     color:#333;
+    font-size:50px;
 }
 
 #youtub_title span{
-    font-size:15px;
+    font-size:20px;
 }
 .box_1{
     height:80px;
@@ -333,13 +378,19 @@ swiper-slide img{
     height:100vh;
     padding:80px 0;
     text-align:center;
+    top:-20px;
+    position:relative;
+    opacity:0;
+    transition:opacity 2s, top 2s;
 }
+
+
 #instagram h2{
-    font-size:2rem;
+    font-size:50px;
     margin-bottom:24px;
 }
 #instagram span{
-    font-size:15px;
+    font-size:20px;
 }
 
 /* footer */
